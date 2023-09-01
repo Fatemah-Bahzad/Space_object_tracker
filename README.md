@@ -1,7 +1,7 @@
 # Space_object_tracker
 
 the code is a part of a bigger project to apply a navigation system to a dish.
-The software takes in an input like a name of a planet, ID number of a satellite, and gives back the location of the object. The base station location and time zone can be changed through the GUI
+The software takes in an input like a name of a planet, ID number of a satellite, and gives back the location of the object and updates it every 2s. The base station location and time zone can be changed through the GUI
  
 The overall code is between four files:
 • client.py
