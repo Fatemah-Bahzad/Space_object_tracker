@@ -78,20 +78,33 @@ up tab.
 tab
 
 • Limit(): checks the FOV limits for the manual mode
+
 • moving_up(),moving_down(),moving_right(),moving_left(): moves the motors depending on
+
 the buttons pressed on the manual tab
+
 • stop_moving(): stop moving the motors when (stop) is pressed on the manual tab
+
 track.py:
+
 § makes it easier to call functions from client.py and connecting it to the GUI client.py:
+
 • TrackPlanet class:
+
 o Loadfilecalled“de421.bsp”
+
 o Usewgs84.latlon()tocalculatethelocationofthegroundstation
+
 o Ifatimeoffsetisgivenapplyitusingtimezone(timedelta(hours=time_offset)) o Ifnotimeoffsetisgiven,thedefaulttimezoneisEST.Implementitusing
 datetime.datetime.now()
+
 o ThelocaltimewillbedisplayedalongwithUTCtimezonebecauseSkyfielduses
 UTC to retrieve the information and calculate the position. To make it easier on the user any local time they pick through the setup screen on the GUI will be display alongside UTC time.
+
 • TrackSatellite class:
+
 o TakesthedataasaninputfromGUI.py
+
 o WillfollowthesamestepsasTrackPlanetclass
 adding more object to track like a spacecraft might require adding more classes depending on the file the data is being retrieve from.
 
