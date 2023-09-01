@@ -2,6 +2,11 @@
 
 the code is a part of a bigger project to apply a navigation system to a dish usign Raspberry_Pi, motors, and encoders 
 The software takes in an input like a name of a planet, ID number of a satellite, and gives back the location of the object and updates it every 2s. The base station location and time zone can be changed through the GUI
+
+<img width="554" alt="project2" src="https://github.com/Fatemah-Bahzad/Space_object_tracker/assets/135342120/afeba07f-5c09-40d7-a949-04647f3ef3b8">
+
+
+
  
 The overall code is between four files:
 • client.py
